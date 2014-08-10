@@ -1,0 +1,18 @@
+.jumbotron
+  .container-fluid
+    .row
+      .col-sm-10.col-sm-offset-1
+        .intro-area
+          %h1.text-center WELCOME HOME
+          %h4.text-center Rent unique places to stay from local hosts in 190 countries.
+          %button.center-block.btn How It Works
+    .row
+      .col-sm-12.bottom-search-area
+        %form.form-inline.text-center
+          %input.form-control{ :type => "text", :placeholder => "Where do you want to go?" }
+          %input.form-control{ :type => "date" }
+          %input.form-control{ :type => "date" }
+          %select.form-control
+            %option 1 Guest
+            %option 2 Guests
+          %button.btn{ :type => "submit" } Search

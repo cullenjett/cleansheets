@@ -1,0 +1,19 @@
+%nav.navbar.navbar-default{:role => "navigation"}
+  .container-fluid
+    / Brand and toggle get grouped for better mobile display
+    .navbar-header
+      %button.navbar-toggle{"data-target" => "#collapsed-section", "data-toggle" => "collapse", :type => "button"}
+        %span.sr-only Toggle navigation
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+      %a.navbar-brand{:href => "#"} CleanSheets
+    / Collect the nav links, forms, and other content for toggling
+    #collapsed-section.collapse.navbar-collapse
+      %ul.nav.navbar-nav.navbar-right
+        %li
+          %a{:href => "#", "data-target" => "#sign-up-modal", "data-toggle" => "modal"} Sign Up
+        %li
+          %a{:href => "#"} Log In
+        %li
+          %button.btn.navbar-btn List Your Space
