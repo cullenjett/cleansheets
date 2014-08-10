@@ -8,11 +8,20 @@
 </head>
 <body>
 
-<header>
-  <%= render 'shared/navigation' %>
-</header>
+  <header>
+    <%= render 'shared/navigation' %>
+  </header>
 
-<%= yield %>
+  <section class="content clearfix">
+    <%= render 'shared/messages' %>
+    <%= yield %>
+  </section>
 
+  <footer>
+    A
+    <%= link_to "Cullen Jett", 'http://www.cullenjet.com' %>
+    Joint
+  </footer>
+  
 </body>
 </html>
