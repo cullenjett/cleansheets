@@ -18,6 +18,7 @@ group :development, :test do
 end
 
 group :test do
-  gem 'capybara'
   gem 'shoulda-matchers'
+  gem 'capybara'
+  gem 'database_cleaner'
 end
