@@ -15,6 +15,8 @@ gem 'jbuilder', '~> 2.0'
 gem 'mongoid'
 gem 'pry'
 gem 'omniauth'
+gem 'omniauth-twitter'
+gem 'figaro'
 
 
 group :development, :test do
