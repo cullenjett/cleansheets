@@ -13,6 +13,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'mongoid'
 gem 'pry'
+gem 'omniauth'
 
 
 group :development, :test do
@@ -23,4 +24,9 @@ group :test do
   gem 'shoulda-matchers'
   gem 'capybara'
   gem 'database_cleaner'
+end
+
+group :production do
+  gem 'pg'
+  gem 'rails_12factor'
 end
