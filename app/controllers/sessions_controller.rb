@@ -7,6 +7,7 @@ class SessionsController < ApplicationController
 
     if user.authenticate(params[:password])
       session[:user_id] = user.id
+      flash[:success] = "Thanks for signing in #{user.first_name}"
       redirect_to user_path(user)
     else
       flash[:danger] = "Oops! You messed up your info. Try again."
