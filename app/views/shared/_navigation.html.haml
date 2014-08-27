@@ -11,9 +11,13 @@
     / Collect the nav links, forms, and other content for toggling
     #collapsed-section.collapse.navbar-collapse
       %ul.nav.navbar-nav.navbar-right
-        %li
-          %a{:href => "#", "data-target" => "#sign-up-modal", "data-toggle" => "modal"} Sign Up
-        %li
-          %a{:href => "#"} Log In
+        - unless logged_in?
+          %li
+            = link_to "Sign Up", new_user_path
+          %li
+            = link_to "Log In", sign_in_path
+        - else
+          %li
+            = link_to "Sign Out", sign_out_path
         %li
           %button.btn.navbar-btn List Your Space

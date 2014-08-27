@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe UsersController do
+describe UsersController do  
   describe "POST create" do
     let(:user) do
       User.create(first_name: "John",
